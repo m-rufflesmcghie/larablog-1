@@ -13,6 +13,7 @@
         "jeremykenedy/laravel-roles": "^2.2.1",
         "jeremykenedy/laravel-users": "^3.1",
         "laravel/framework": "6.0.0",
+        "laravel/helpers": "^1.1",
         "laravel/tinker": "^1.0",
         "michelf/php-markdown": "^1.8",
         "michelf/php-smartypants": "^1.8",
