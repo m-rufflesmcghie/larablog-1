@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
+use Illuminate\Support\Str;
 
 class Post extends Model implements Feedable
 {
@@ -119,7 +120,7 @@ class Post extends Model implements Feedable
      */
     protected function setUniqueSlug($title, $extra)
     {
-        $slug = str_slug($title.'-'.$extra);
+        $slug = str::slug($title.'-'.$extra);
 
         if (static::whereSlug($slug)->exists()) {
             $this->setUniqueSlug($title, $extra + 1);
