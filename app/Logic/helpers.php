@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 /**
  * Return sizes readable by humans.
  */
@@ -16,7 +18,7 @@ function human_filesize($bytes, $decimals = 2)
  */
 function is_image($mimeType)
 {
-    return starts_with($mimeType, 'image/');
+    return Str::startsWith($mimeType, 'image/');
 }
 
 /**
@@ -35,7 +37,7 @@ function post_image($value = null)
     if (empty($value)) {
         $value = config('blog.post_image');
     }
-    if (!starts_with($value, 'http') && $value[0] !== '/') {
+    if (!Str::startsWith($value, 'http') && $value[0] !== '/') {
         $value = config('blog.uploads.webpath').'/'.$value;
     }
 

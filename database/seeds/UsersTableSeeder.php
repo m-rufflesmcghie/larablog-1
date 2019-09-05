@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 use jeremykenedy\LaravelRoles\Models\Role;
 
@@ -30,7 +31,7 @@ class UsersTableSeeder extends Seeder
                 'email'             => $seededSuperAdminEmail,
                 'email_verified_at' => now(),
                 'password'          => Hash::make(config('superadmin.baseSuperAdminUser01PW')),
-                'remember_token'    => str_random(10),
+                'remember_token'    => Str::random(10),
             ]);
 
             $user->attachRole($superAdminRole);
