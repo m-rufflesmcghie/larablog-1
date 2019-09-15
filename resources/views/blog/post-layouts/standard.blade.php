@@ -18,10 +18,9 @@
         </div>
     </article>
 
-    @if(config('blog.services.disqusKey'))
+   
         @include('blog.partials.disqus')
-    @endif
-
+        
 @endsection
 
 @push('scripts')

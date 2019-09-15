@@ -10700,11 +10700,11 @@ header.masthead .site-heading h1 {
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
   font-size: 24px;
-  font-weight: 300;
+
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
 }
 
 @media only screen and (min-width: 768px) {

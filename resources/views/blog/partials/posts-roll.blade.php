@@ -7,14 +7,8 @@
                         <h2 class="post-title">
                             {!! $post->title !!}
                         </h2>
-                        <h3 class="post-subtitle">
-                            {!! $post->subtitle !!}
-                        </h3>
-                    </a>
-                    <p class="post-meta">
-                        {!! trans('larablog.blogroll.postedBy', ['url' => url('/author/' . $post->author), 'author' => $post->author, 'date' => $post->published_at->format('F j, Y')]) !!}
-                    </p>
-                    @if ($post->tags->count())
+                       
+ @if ($post->tags->count())
                         <div class="tags-area">
                             <small class="text-muted">
                                 {!! trans('larablog.blogroll.tags') !!}
@@ -24,6 +18,32 @@
                             </span>
                         </div>
                     @endif
+                        
+                        <h3 class="post-subtitle">
+                            {!! $post->subtitle !!}
+                        </h3>
+                    </a>
+                    
+                    <span class="post-meta">
+                        {!! trans('larablog.blogroll.postedBy', ['url' => url('/author/' . $post->author), 'author' => $post->author, 'date' => $post->published_at->format('F j, Y')]) !!}
+                    </span>
+                    
+                    
+                    <div>
+                            <a href="#" class="badge badge-pill badge-primary">
+                            
+  
+                                {!! trans('larablog.blogroll.comment') !!}
+                            <span class="badge badge-light">4</span>
+                            </a>
+                                  <a href="#" class="badge badge-pill badge-danger">
+                            
+  
+                                {!! trans('larablog.blogroll.likes') !!}
+                            <span class="badge badge-light">4</span>
+                            </a>
+                            
+                        </div>
                 </div>
                 <hr>
             @endforeach

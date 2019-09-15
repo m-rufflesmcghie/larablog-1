@@ -24,6 +24,8 @@ return [
     'blogroll' => [
         'postedBy'  => 'Posted by <a href=":url">:author</a> on :date',
         'tags'      => 'Tags: ',
+        'comment'  => 'Comments', 
+        'likes' => 'Likes', 
     ],
 
     'pagination' => [
@@ -33,8 +35,8 @@ return [
     ],
 
     'home' => [
-        'title'         => 'Welcome to Larablog',
-        'description'   => 'Larablog is an open source blog built on Laravel and Bootstrap',
+        'title'         => 'Welcome to RMBlog',
+        'description'   => 'RMBlog is a fork of Larablog which is an open source blog built on Laravel and Bootstrap',
     ],
 
     'tags' => [
@@ -55,7 +57,8 @@ return [
     ],
 
     'footer' => [
-        'copyright' => '&copy; Lara(b)log 2018 | An <a href="https://github.com/jeremykenedy/larablog" target="_blank" class="text-success">opensource</a> blog platform<br /> Developed with Love <i class="fa fa-heart text-danger"></i> by <a href="https://github.com/jeremykenedy" class="text-muted" target="_blank">Jeremy Kenedy</a>',
+        'copyright' => '&copy; RMBlog 2019 | An <a href="https://github.com/m-rufflesmcghie/larablog-1" target="_blank" class="text-success">opensource</a> blog platform<br /> Developed with Love <i class="fa fa-heart text-danger"></i> by <a href="https://github.com/m-rufflesmcghie" class="text-muted" target="_blank">Matt Ruffles-Mcghie</a>
+<a href="https://github.com/" class="text-muted" target="_blank">Forked from Jeremy Kenedy/LaraBlog</a>',
     ],
 
     'contact' => [
